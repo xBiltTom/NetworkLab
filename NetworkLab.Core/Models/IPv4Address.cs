@@ -19,4 +19,12 @@ public class IPv4Address{
     {
         return $"{Octet1}.{Octet2}.{Octet3}.{Octet4}";
     }
+
+    public uint ToUInt32()
+    {
+        return ((uint)Octet1 << 24)
+            | ((uint)Octet2 << 16)
+            | ((uint)Octet3 << 8)
+            | Octet4;
+    }
 }
