@@ -1,2 +1,4 @@
 <Solution>
+  <Project Path="NetworkLab.Cli/NetworkLab.Cli.csproj" />
+  <Project Path="NetworkLab.Core/NetworkLab.Core.csproj" />
 </Solution>
