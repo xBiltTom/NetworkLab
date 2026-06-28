@@ -27,4 +27,13 @@ public class IPv4Address{
             | ((uint)Octet3 << 8)
             | Octet4;
     }
+
+    public static IPv4Address FromUInt32(uint value)
+    {
+        byte octet1 = (byte)((value >> 24) & 0xFF);
+        byte octet2 = (byte)((value >> 16) & 0xFF);
+        byte octet3 = (byte)((value >> 8) & 0xFF);
+        byte octet4 = (byte)(value & 0xFF);
+        return new IPv4Address(octet1, octet2, octet3, octet4);
+    }
 }
