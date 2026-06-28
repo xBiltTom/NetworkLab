@@ -14,4 +14,9 @@ public class IPv4Address{
         Octet3 = octet3;
         Octet4 = octet4;
     }
+
+    public override string ToString()
+    {
+        return $"{Octet1}.{Octet2}.{Octet3}.{Octet4}";
+    }
 }
