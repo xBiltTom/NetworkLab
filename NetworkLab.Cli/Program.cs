@@ -1,6 +1,6 @@
 using NetworkLab.Core.Models;
 
-var input = "255.0.1.1";
+var input = "192.168.45.109";
 
 var ip = IPv4Address.Parse(input);
 
