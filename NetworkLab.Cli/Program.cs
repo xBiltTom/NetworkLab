@@ -1,12 +1,8 @@
 using NetworkLab.Core.Models;
 
-var ip = new IPv4Address(192,168,1,34);
+var input = "255.0.1.1";
 
-uint value = ip.ToUInt32();
+var ip = IPv4Address.Parse(input);
 
-Console.WriteLine(value);
-
-var newip = IPv4Address.FromUInt32(value);
-
-Console.WriteLine(newip);
+Console.WriteLine(ip);
 
