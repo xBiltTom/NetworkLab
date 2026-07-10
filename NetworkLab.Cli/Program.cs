@@ -1,6 +1,7 @@
 using NetworkLab.Core.Models;
 
-byte prefix = 27;
-
-var mask = IPv4Mask.FromPrefix(prefix);
-Console.WriteLine(mask);
+var input = "192.168.32.255";
+byte prefixLenght = 8;
+var hostAddress = IPv4Address.Parse(input);
+var networkAddress = IPv4Network.FromAddress(hostAddress,prefixLenght);
+Console.WriteLine(networkAddress);
